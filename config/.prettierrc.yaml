@@ -1,5 +1,3 @@
----
-
 ##################################################
 # Name: .prettierrc.yaml
 # Description: Prettier config
@@ -22,6 +20,7 @@ overrides:
       - "*.md"
     options:
       tabWidth: 2
+      useTabs: false
 
   #########################
   # HTML
@@ -30,6 +29,28 @@ overrides:
       - "*.html"
     options:
       tabWidth: 2
+      useTabs: false
+
+  #########################
+  # Javascript and Typescript
+  #########################
+  - files:
+      - "*.js"
+      - "*.jsx"
+      - "*.ts"
+      - "*.tsx"
+    options:
+      tabWidth: 2
+      useTabs: false
+
+  #########################
+  # Python
+  #########################
+  - files:
+      - "*.py"
+    options:
+      tabWidth: 4
+      useTabs: false
 
   #########################
   # YAML
