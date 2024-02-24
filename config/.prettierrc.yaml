@@ -15,6 +15,14 @@ singleQuote: false
 
 overrides:
   #########################
+  # Global
+  #########################
+  - files:
+      - "*.*"
+    options:
+      brackSpacing: false
+
+  #########################
   # Markdown
   #########################
   - files:
