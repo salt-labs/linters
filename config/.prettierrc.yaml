@@ -20,7 +20,7 @@ overrides:
   - files:
       - "*.*"
     options:
-      brackSpacing: false
+      bracketSpacing: false
 
   #########################
   # Markdown
