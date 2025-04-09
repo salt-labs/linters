@@ -8,6 +8,10 @@
 # configure golangci-lint
 # https://github.com/golangci/golangci-lint/blob/master/.golangci.example.yml
 
+# Configuration version
+# See https://golangci-lint.run/usage/configuration/#version
+version: 1
+
 issues:
   exclude-rules:
     - path: _test\.go
