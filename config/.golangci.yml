@@ -10,7 +10,6 @@
 
 # Configuration version
 # See https://golangci-lint.run/usage/configuration/#version
-
 version: "2"
 
 linters:
@@ -22,23 +21,14 @@ linters:
     - gocritic
     - govet
     - revive
-
-formatters:
-  enable:
-    - goimports
-
-settings:
-  errcheck:
-    # report about assignment of errors to blank identifier
-    # default is false: such cases aren't reported by default.
-    check-blank: true
-  gocyclo:
-    # minimal code complexity to report, 30 by default
-    min-complexity: 15
-  maligned:
-    # print struct with more effective memory layout or not, false by default
-    suggest-new: true
-
+  settings:
+    errcheck:
+      # report about assignment of errors to blank identifier
+      # default is false: such cases aren't reported by default.
+      check-blank: true
+    gocyclo:
+      # minimal code complexity to report, 30 by default
+      min-complexity: 15
   exclusions:
     rules:
       # Exclude specific linters from running on test files.
@@ -47,4 +37,8 @@ settings:
           - dupl
           - gosec
           - goconst
+
+formatters:
+  enable:
+    - goimports
 
